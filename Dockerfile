@@ -1,6 +1,6 @@
-FROM wurstmeister/base
+FROM promojam/storm_base
 
-MAINTAINER Wurstmeister
+MAINTAINER Promojam
 
 RUN wget -q -O - http://mirror.vorboss.net/apache/zookeeper/zookeeper-3.4.6/zookeeper-3.4.6.tar.gz | tar -xzf - -C /opt
 RUN mv /opt/zookeeper-3.4.6/conf/zoo_sample.cfg /opt/zookeeper-3.4.6/conf/zoo.cfg
